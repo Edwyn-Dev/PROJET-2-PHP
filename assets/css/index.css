@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'custom';
+    src: url('../fonts/Rajdhani-Regular.ttf');
+}
+
+* {
+    font-family: 'custom';
+}
+
+body {
+    color: #fff;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#header {
+    color: white;
+}
+
+.container {
+    color: #fff;
+    width: 90%;
+    max-height: calc(80vh - 130px);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+#container-title-h1 {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-bottom-left-radius: 1rem;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+
+#container-title-h3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+
+#guessing {
+    width: 30%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#divGuess {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#submit {
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    color: #333;
+    background-color: #fff;
+    font-weight: bolder;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#footer {
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 680px) {
+    #guessing {
+        width: 80%;
+    }
+}
